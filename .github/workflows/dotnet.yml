@@ -1,0 +1,15 @@
+name: test ci
+
+on:
+  push:
+    branches: [ "test" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: PowerShell Hello World
+      uses: rajbos/actions-testing@v0.0.1
